@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #5C8180;
+  --color-secondary: #A8B58A;
+  --color-pinkish-red: #B46A72;
+  --color-dark-teal: #235A57;
+  --color-lavender: #888CB1;
+  --color-accent: #FCC88A;
+  --color-background: #FBF8F3;
+  --color-text-title: #193551;
+  --color-text-primary: #2D3A47;
+  --color-hover: #A9B7C6;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/assets/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype-variable');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype-variable');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpaceMonoReg';
+  src: url('/assets/fonts/SpaceMono-Regular.ttf') format('truetype-variable');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpaceMonoBold';
+  src: url('/assets/fonts/SpaceMono-Bold.ttf') format('truetype-variable');
+  font-weight: 700;
+  font-display: swap;
+}
