@@ -1,0 +1,59 @@
+.banner {
+    margin-top: 10vh;
+}
+
+#subtitle {
+    font-size: 16px;
+    font-family: var(--font-mono);
+    color: var(--color-pinkish-red);
+}
+
+#desc {
+    font-size: 16px;
+    font-family: var(--font-work-sans);
+    color: var(--color-text-primary);
+    line-height: 2;
+}
+
+h1 {
+    font-size: 96px;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--color-text-title);
+}
+
+.profile-photo {
+    max-width: 100%;
+    height: auto;
+}
+
+#whoami {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--color-secondary);
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 0.6em;
+        height: 1em;
+        background-color: var(--color-primary);
+        margin-left: 4px;
+        vertical-align: baseline;
+        transform: translateY(0.15em);
+        animation: blink 1s step-end infinite;
+    }
+}
+
+svg {
+    stroke: var(--color-primary);
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
+}

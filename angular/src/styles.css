@@ -1,3 +1,7 @@
+body {
+  background-color: var(--color-background);
+}
+
 :root {
   --color-primary: #5C8180;
   --color-secondary: #A8B58A;
@@ -9,32 +13,36 @@
   --color-text-title: #193551;
   --color-text-primary: #2D3A47;
   --color-hover: #A9B7C6;
+
+  /* fonts */
+  --font-mono: 'SpaceMono', monospace;
+  --font-work-sans: 'WorkSans', monospace;
 }
 
 @font-face {
   font-family: 'Fraunces';
-  src: url('/assets/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype-variable');
+  src: url('/assets/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
   font-weight: 100 900;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'WorkSans';
-  src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype-variable');
+  src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'SpaceMonoReg';
-  src: url('/assets/fonts/SpaceMono-Regular.ttf') format('truetype-variable');
+  font-family: 'SpaceMono';
+  src: url('/assets/fonts/SpaceMono-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'SpaceMonoBold';
-  src: url('/assets/fonts/SpaceMono-Bold.ttf') format('truetype-variable');
+  font-family: 'SpaceMono';
+  src: url('/assets/fonts/SpaceMono-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
 }
