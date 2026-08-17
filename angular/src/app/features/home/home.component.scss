@@ -1,5 +1,6 @@
 .banner {
-    margin-top: 10vh;
+    margin-top: 20vh;
+    height: 70vh;
 }
 
 #subtitle {
@@ -8,7 +9,7 @@
     color: var(--color-pinkish-red);
 }
 
-#desc {
+.section-desc {
     font-size: 16px;
     font-family: var(--font-work-sans);
     color: var(--color-text-primary);
@@ -22,9 +23,43 @@ h1 {
     color: var(--color-text-title);
 }
 
+h2 {
+    font-size: 32px;
+    font-family: var(--font-fraunces);
+    color: var(--color-text-primary);
+}
+
+.section-number {
+    font-size: 16px;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.section-line {
+    flex: 0.6; 
+    height: 1px;
+    background-color: var(--color-text-primary);
+    opacity: 0.7;
+}
+
 .profile-photo {
     max-width: 100%;
     height: auto;
+}
+
+.about-me {
+    height: 100vh;
+}
+
+.experience {
+    height: 50vh;
+}
+
+#about-me,
+#experience,
+#projects {
+  scroll-margin-top: 500px;
 }
 
 #whoami {
@@ -47,6 +82,33 @@ h1 {
 
 svg {
     stroke: var(--color-primary);
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 48px;
+  row-gap: 24px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  svg {
+    fill: var(--color-accent);
+    flex-shrink: 0;
+  }
+
+  span {
+    font-family: var(--font-work-sans);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 16px;
+  }
 }
 
 @keyframes blink {
